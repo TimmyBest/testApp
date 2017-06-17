@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ccLayout"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.forwardgame.myapplication.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ahoj, Lapka!"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice_2"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="40dp"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/dice_3"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/iv2"
+        android:layout_marginTop="8dp" />
+
+
+    <ImageView
+        android:id="@+id/iv4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/dice_4"
+        app:layout_constraintTop_toBottomOf="@+id/iv1" />
+
+
+
+
+
+    <Button
+        android:id="@+id/btnRoll"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Roll'em!"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv4" />
+
+    <Button
+        android:id="@+id/btnAdd2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add 2"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="@+id/iv1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/iv2"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/iv1"
+        android:layout_marginLeft="8dp" />
+
+
+</android.support.constraint.ConstraintLayout>
