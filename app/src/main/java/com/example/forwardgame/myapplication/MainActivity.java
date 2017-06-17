@@ -23,7 +23,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.Random;
-// Commit June 18  SUCCESSFUL
+// Commit June 18  SUCCESSFUL Flipper
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
